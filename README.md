@@ -116,7 +116,10 @@ Prueba 5 (Recuersos minimos):
 
 6. Escalamiento horizontal con réplicas
 
-Se intentó usar docker-compose con deploy.replicas: 3. Se evidencia que el sistema no logró sostener la carga sin errores, a pesar de tener 3 contenedores con 1.5 CPUs y 2.5 GB de RAM cada uno. es decir el escalado con 3 instancias no es suficiente. Sin balanceador de carga, las peticiones no se distribuyen correctamente.  Para cumplir el objetivo del punto 6 correctamente, se debe escalar con instancias de 2.8/5.5 (igual que el mínimo viable individual).
+Se intentó utilizar docker-compose configurando deploy.replicas: 3, asignando a cada contenedor 1.5 CPUs y 2.5 GB de RAM. Sin embargo, el sistema no logró sostener la carga sin errores, lo que indica que el escalado con tres instancias de estos recursos no es suficiente. Además, al no contar con un balanceador de carga, las peticiones no se distribuyen de manera adecuada entre los contenedores, lo que contribuye a la ineficiencia del escalado. Para cumplir correctamente con el objetivo del punto 6, es necesario escalar utilizando instancias con al menos 2.8 CPUs y 5.5 GB de RAM cada una, que corresponde a los recursos mínimos viables identificados para una sola instancia. Reducir aún más los recursos no es factible sin comprometer la estabilidad del sistema bajo la carga actual.
+
+![Uploading image.png…]()
+
 
 ![Captura de pantalla 2025-04-05 164620](https://github.com/user-attachments/assets/1b533a29-2525-418e-8cbe-0cd8367b6908)
 
