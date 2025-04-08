@@ -96,7 +96,7 @@ Resultados de las experimentaciones:
 | 1                  | no                | 27,13              | 42          | 6G             | 3          | Sin falla                             |
 | 10000              | sí                | 846                | 11028       | 5G             | 2,5        | Falla en 34% de predicciones         |
 | 10000              | no                | 16700              | 31524       | 6G             | 3          | Sin falla                             |
-| 10000              | no                | 11834              | 23659       | 5,5G           | 2,5        | Sin falla                             |
+| 10000              | no                | 11834              | 23659       | 5,5G           | 2,8        | Sin falla                             |
 
 
 Prueba 1:
