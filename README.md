@@ -120,3 +120,8 @@ Se intentó usar docker-compose con deploy.replicas: 3. Se evidencia que el sist
 
 ![Captura de pantalla 2025-04-05 164620](https://github.com/user-attachments/assets/1b533a29-2525-418e-8cbe-0cd8367b6908)
 
+Nota: El archivo mejor_rf_model para el BestModel no se puede subir a github dado el tamaño, se intenta subir con lfs de manera fallida, en local el modelo se encuenyra gaurdado en la carpeta models dentro de airflow:
+
+![image](https://github.com/user-attachments/assets/aa3dcc8a-54e0-4a86-82e9-d431d1fc12c5)
+
+
